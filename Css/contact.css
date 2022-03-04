@@ -1,0 +1,17 @@
+.contactoInfo{
+    font-size: 15px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--text-color);
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+}
+
+@media (min-width: 950px){
+    .contactoInfo{
+        font-size: 20px;
+        margin: 30px 0;
+        align-items: center;
+    }
+
+}

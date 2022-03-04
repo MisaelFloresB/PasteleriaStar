@@ -1,0 +1,109 @@
+.topHeader{
+    /* primer valor es de y, segundo x, tercero difuminado y cuarto color*/
+    box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    position: fixed;
+    background-color: var(--theme-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+}
+
+.topNav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.logo img{
+    border-radius: 50%;
+}
+
+/* Menu */
+
+.Menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.Menu li{
+    padding: 0 15px;
+}
+
+.Menu a{
+    color: var(--text-color);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 50px; /* Alto de linea del Texto*/
+    text-transform: uppercase; /*Tamanio de letra*/
+
+}
+
+.openMenu, .closeMenu {
+    display: none;
+}
+/*Media query sirven para sobre escribir clases si la condicion que esta en ella se cumple*/
+@media (max-width: 950px){    
+    
+    /* Menu */
+    .Menu {
+        flex-direction: column;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        align-items: center;
+        background-color: var(--menu-mobile-background-color);
+        height: 100%;
+        overflow-y: auto; /*Agrega una barra si el contenido del menu es mayor al tamanio de la pantalla*/
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.3s;
+    }
+    
+    .Menu li{
+        padding: 0;
+    }
+    
+    .Menu a{
+        color: var(--text-color-inverse);
+        line-height: 60px; /* Alto de linea del Texto*/
+    
+    }
+    
+    .openMenu, .closeMenu {
+        display: block;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+    .closeMenu{
+        align-self: flex-end;
+        padding: 20px 15px;
+    }
+    .menuOpened{
+        opacity: 1;
+        pointer-events: all;
+    }
+     /*Sirve para decir que no sea visible el delineado de seleccionador si se hace con el raton*/
+    .openMenu:focus:not(:focus)
+    .closeMenu:focus:not(:focus){
+        outline: none;
+
+    }
+    
+
+}

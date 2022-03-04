@@ -1,0 +1,79 @@
+.formdatacliente{
+    width: 94%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.formPasteles{
+    display: flex;
+    flex-direction: column;
+}
+
+.formPastelesBody{
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+}
+
+.formulario{
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.sectionDeco{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.decoBody{
+    max-width: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+.instrucciones{
+    font-family: 'Noto Sans', sans-serif;
+    text-align: center;
+    margin: 1;
+    
+}
+
+@media (min-width: 950px){
+
+    .formPasteles{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .formulario{
+        max-width: 800px;
+        margin: auto;
+    
+    
+    }
+    
+    .decoBody{
+        max-width: 800px;
+        margin: auto;
+    
+    }
+
+}

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet"/>
+    <!-- external css -->
+    <!-- background -->
+    <link rel="stylesheet" type="text/css" href="./Css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="./Css/navbar.css"/>
+    <link rel="stylesheet" type="text/css" href="./Css/pastel.css"/>
+    <link rel="stylesheet" type="text/css" href="./Css/menus.css"/>
+    <link rel="stylesheet" type="text/css" href="./Css/form.css"/>
+    <link rel="stylesheet" type="text/css" href="./Css/contact.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+    <script defer src="js/app.js"></script>
+  </head>
+<body>
+  <header class="topHeader">
+    <nav class="topNav">
+      <a href="#" class="logo">
+        <img 
+        height="50"
+        width="50"
+        src="./Css/Images/post instagram delicado desayunos saludable  pasteles.png"
+        alt="pasteles"
+        />
+        <div>Pasteles 
+          <br>Star
+        </div>
+      </a>
+        <button class="openMenu" aria-label="Abrir Menu">
+          <img src="./Css/Images/menu.png" alt="abrir menu"/>
+        </button>
+        <ul class="Menu">
+          <button class="closeMenu" aria-label="Cerrar Menu">
+            <img src="./Css/Images/cerrar.png" alt="cerrar menu"/>
+          </button>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="pedido.html">Pedido</a></li>
+          <li ><a href="admin.html">Admin Pasteles</a></li>
+          <li ><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+      
+        <!--Inicia formulario para datos cliente-->
+        <section class="formdatacliente">
+        <h3 class="menusDecoTittle">Ingresa Tus Datos De Contacto</h3>
+        <form class="formulario">
+          <label for="nombreCliente" class="labels">Nombre</label>
+          <input type="nombreCliente" id="nombreCliente" name="nombreCliente" maxlength="20" class="inputs">
+          <br>
+          <label for="telCliente" class="labels">Telefono</label>
+          <input type="tel" id="telCliente" name="telCliente" maxlength="10" class="inputs">
+          <br>
+          <label for="correoCliente" class="labels">Correo Electronico</label>
+          <input type="email" id="correoCliente" name="correoCliente" class="inputs">
+          <br>
+          <label for="adressCliente" class="labels">Direccion De Entrega</label>
+          <input type="text"" id="adressCliente" name="adressCliente" class="inputs">
+          <br>
+        </section>
+      </form>
+
+        <!--Inicia formulario para Seleccionar pastel-->
+      <section class="formPasteles">
+          <img src="./Css/Images/wave 1.svg" alt="divsion pagina" class="wave" />
+        <div class="formPastelesBody">
+            <h3 class="menusTittle">Selecciona Tu Pastel(es) A Pedir</h3>
+            <form class="formulario">
+              <label for="chocolateCake" class="labels">Pastel De Chocolate</label>
+              <input type="number" id="chocolateCake" name="chocolateCake" class="inputs">
+              <br>
+
+              <label for="zarzamorasCake" class="labels">Pastel De Zarzamoras</label>
+              <input type="number" id="zarzamorasCake" name="zarzamorasCake" class="inputs">
+              <br>
+
+              <label for="fresaCake" class="labels">Pastel De Fresa</label>
+              <input type="number" id="fresaCake" name="fresaCake" class="inputs">
+              <br>
+
+              <label for="tresCake" class="labels">Pastel De Tres Leches</label>
+              <input type="number" id="tresCake" name="tresCake" class="inputs">
+              <br>
+
+              <label for="gansitoCake" class="labels">Pastel De Gansito</label>
+              <input type="number" id="gansitoCake" name="gansitoCake" class="inputs">
+              <br>
+
+              <label for="conejoCake" class="labels">Pastel De Conejo Turin</label>
+              <input type="number" id="conejoCake" name="conejoCake" class="inputs">
+              <br>
+
+              <label for="bodasCake2" class="labels">Pastel De Bodas 2 Pisos</label>
+              <input type="number" id="bodasCake2" name="bodasCake2" class="inputs">
+              <br>
+
+              <label for="bodasCake3" class="labels">Pastel De Bodas 3 Pisos</label>
+              <input type="number" id="bodasCake3" name="bodasCake3" class="inputs">
+            </div>
+            <img src="./Css/Images/wave 1.svg" alt="divsion pagina" class="waveBottom"/>
+            </form>
+      </section>
+
+        <!--Inicia formulario para decoraciones-->
+        <section class="sectionDeco">
+          <div class="decoBody">
+        <h3 class="menusDecoTittle">Selecciona Tu(s) Decoracion(es)</h3>
+        <h5 class="instrucciones">
+            Favor de seleccionar primero la decoracion
+            a poner y despues en que pastel se añadira
+        </h5>
+        <form class="decoFormulario">
+          <label for="dCumpleaños" class="decoLabel">Decoracion de cumpleaños</label>
+          <input type="checkbox" id="dCumpleaños" name="dCumpleaños" class="decoCheck">
+          <br>
+          <select id="Extradeco1" name="Extradeco1" class="decoSelect">
+            <option value="#"></option>
+            <option value="chocolateOption">Chocolate</option>
+            <option value="zarzamorasOption">Zarzamoras</option>
+            <option value="fresaOption">Fresa</option>
+            <option value="gansitoOption">Gansito</option>
+            <option value="conejoOption">Conejo</option>
+          </select>
+          <br>
+
+          <label for="dColorido">Decoracion colorido</label>
+          <input type="checkbox" id="dColorido" name="dColorido">
+          <br>
+          <select id="Extradeco2" name="Extradeco2">
+            <option value="#"></option>
+            <option value="chocolateOption">Chocolate</option>
+            <option value="zarzamorasOption">Zarzamoras</option>
+            <option value="fresaOption">Fresa</option>
+            <option value="gansitoOption">Gansito</option>
+            <option value="conejoOption">Conejo</option>
+          </select>
+          <br>
+
+          <label for="dImpresa">Decoracion Impresa</label>
+          <input type="checkbox" id="dImpresa" name="dImpresa">
+          <br>
+          <select id="Extradeco3" name="Extradeco3">
+            <option value="#"></option>
+            <option value="chocolateOption">Chocolate</option>
+            <option value="zarzamorasOption">Zarzamoras</option>
+            <option value="fresaOption">Fresa</option>
+            <option value="gansitoOption">Gansito</option>
+            <option value="conejoOption">Conejo</option>
+          </select>
+          <br>
+
+          <label for="dChantilly">Decoracion Chantilly</label>
+          <input type="checkbox" id="dChantilly" name="dChantilly"> 
+          <br>
+          <select id="Extradeco4" name="Extradeco4">
+            <option value="#"></option>
+            <option value="chocolateOption">Chocolate</option>
+            <option value="zarzamorasOption">Zarzamoras</option>
+            <option value="fresaOption">Fresa</option>
+            <option value="gansitoOption">Gansito</option>
+            <option value="conejoOption">Conejo</option>
+          </select>
+          <br>
+          </form>
+        </div>
+        </section>
+
+        <!--Inicia formulario para sabores extra-->
+      <section class="formPasteles">
+        <img src="./Css/Images/wave 1.svg" alt="divsion pagina" class="wave" />
+        <div class="formPastelesBody">
+        <h3 class="menusTittle">Sabor Extra (Opcional)</h3>
+        <h5 class="instrucciones">
+            Favor de seleccionar primero el extra a 
+            poner y despues en que pastel se añadira
+        </h5>
+        <form class="formulario">
+          <label for="ExtraChoco">Chocolate Extra</label>
+          <input type="checkbox" id="ExtraChoco" name="ExtraChoco">
+          <br>
+          <select id="ExtraChoco1" name="ExtraChoco1">
+            <option value="chocolateOption">Chocolate</option>
+            <option value="zarzamorasOption">Zarzamoras</option>
+            <option value="fresaOption">Fresa</option>
+            <option value="gansitoOption">Gansito</option>
+            <option value="conejoOption">Conejo</option>
+          </select>
+          <br>
+
+          <label for="extraZarza">Zarzamoras Extra</label>
+          <input type="checkbox" id=extraZarza" name="extraZarza">
+          <br>
+          <select id="extraZarza1" name="extraZarza1">
+            <option value="chocolateOption">Chocolate</option>
+            <option value="zarzamorasOption">Zarzamoras</option>
+            <option value="fresaOption">Fresa</option>
+            <option value="gansitoOption">Gansito</option>
+            <option value="conejoOption">Conejo</option>
+          </select>
+          <br>
+
+          <label for="fresaExtra">Fresa Extra</label>
+          <input type="checkbox" id="fresaExtra" name="fresaExtra">
+          <br>
+          <select id="fresaExtra1" name="fresaExtra1">
+            <option value="chocolateOption">Chocolate</option>
+            <option value="zarzamorasOption">Zarzamoras</option>
+            <option value="fresaOption">Fresa</option>
+            <option value="gansitoOption">Gansito</option>
+            <option value="conejoOption">Conejo</option>
+          </select>
+          <br>
+
+          <label for="GansiExtra">Gansito Extra</label>
+          <input type="checkbox" id="GansiExtra" name="GansiExtra"> 
+          <br>
+          <select id="GansiExtra1" name="GansiExtra1">
+            <option value="chocolateOption">Chocolate</option>
+            <option value="zarzamorasOption">Zarzamoras</option>
+            <option value="fresaOption">Fresa</option>
+            <option value="gansitoOption">Gansito</option>
+            <option value="conejoOption">Conejo</option>
+          </select>
+          <br>
+
+          <label for="conejoExtra">Conejo De Taurin Extra</label>
+          <input type="checkbox" id="conejoExtra" name="conejoExtra"> 
+          <br>
+          <select id="conejoExtra1" name="conejoExtra1">
+            <option value="chocolateOption">Chocolate</option>
+            <option value="zarzamorasOption">Zarzamoras</option>
+            <option value="fresaOption">Fresa</option>
+            <option value="gansitoOption">Gansito</option>
+            <option value="conejoOption">Conejo</option>
+          </select>
+          <br>
+          <label for="extraComment">Comentarios Adicionales Del Pedido</label>
+          <br>
+          <textarea name="extraComment" id="extraComment" rows="5" cols="30"></textarea>
+        </div>
+          <img src="./Css/Images/wave 1.svg" alt="divsion pagina" class="waveBottom"/>
+        </form>
+        
+      </section>
+
+      
+        <section class="contacto" id="contacto">
+          <h2 class="menusDecoTittle">Contacto</h2>
+    
+          <p class="contactoInfo">
+            Telefono 1234567894
+            <br>
+            Correo micorreo@micorreo.com
+            <br>
+            Horarios Lunes - Viernes, 7:00 am - 8:00 pm
+            <br>
+            Direccion Av Luna, num 350, Colonia Galaxia C.P. 123456
+            <br>
+        </p>
+    
+</body>
+</html>

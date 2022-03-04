@@ -1,0 +1,82 @@
+.menusCakeDeco{
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.menuPrincipal{
+    display: flex;
+    flex-direction: column;
+}
+
+.menuPastelesBody{
+    background-color: var(--primary-color);
+    color: var(--text-color-inverse);
+}
+
+.menusTittle{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.menuList{
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.menuListPasteles{
+    font-size: 20px;
+    font-weight: 500;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius:  42px;
+    padding: 0.5em 0.7em;
+    margin: 10px;
+
+}
+.wave{
+    width: 100%;
+    position: relative;
+    top: 2px;
+}
+
+.waveBottom{
+    transform: scaleY(-1.1);
+    top: -2px;
+}
+
+.menusDecoTittle{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+    font-family: 'Noto Sans', sans-serif;
+
+}
+
+
+@media (min-width: 950px){
+
+    .menusTittle{
+        font-size: 50px;
+        
+    }
+    
+    .menuListPasteles{
+        font-size: 30px;
+        margin: 20px;
+    
+    }
+
+    .menusDecoTittle{
+        font-size: 60px;
+        text-align: center;
+    
+    }
+    
+
+}

@@ -1,0 +1,91 @@
+/*Estilo pagina*/
+:root{
+  --theme-color: white;
+  --primary-color: #F092DB;
+  --secundary-color: #ffb3ee;
+  --text-color: black;
+  --text-color-inverse: white;
+  --navbar-shallow-color: #e5e5e5;
+  --menu-mobile-background-color: #3A4460;
+
+
+}
+html{
+  scroll-behavior: smooth; /*suaviza el scroll de las secciones */
+}
+body {
+  background-color: var(--theme-color);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--text-color);
+  padding-top: 70px;
+}
+
+a {
+  text-decoration: none;
+}
+.horizontalPading{
+  padding-left: 25px;
+  padding-right: 25px;
+
+}
+.verticalPadig{
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+}
+ /*Estilo para tabla cakeMenu*/
+
+ .cakeMenu,th, td{
+   padding: 8px;
+   text-align: left;
+   border-bottom: 1px solid #ddd;
+   margin: 0 auto;
+ }
+ .decoMenu,th, td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+}
+.tablePedidos,th, td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+.restanteSabores,th, td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+}
+
+.restanteDeco,th, td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  margin: 0 auto;
+}
+.contactSection,th, td{
+  padding: 8px;
+  text-align: left;
+  border-bottom: 0px solid;
+  margin: 0 auto;
+}
+ tr:hover{
+   background-color: #d6eeee;
+ }
+
+ @media (min-width: 950px){
+  .horizontalPading{
+    padding-left: 70px;
+    padding-right: 70px;
+  
+  }
+  .verticalPadig{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  
+  }
+ }
